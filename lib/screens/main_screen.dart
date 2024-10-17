@@ -37,7 +37,7 @@ class _MainScreenState extends State<MainScreen> {
                   return ListView.builder(
                       itemCount: snapshot.data!.articles!.length,
                       itemBuilder: (context, index) {
-                        return Text('${snapshot.data!.articles![index]}');
+                        return Text('${snapshot.data!.articles![index].content}');
                       });
                 } else {
                   return const Placeholder();
