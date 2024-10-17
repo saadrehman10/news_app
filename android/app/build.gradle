@@ -5,7 +5,12 @@ plugins {
     id "dev.flutter.flutter-gradle-plugin"
 }
 
+
 android {
+
+    compileSdkVersion 33
+    buildToolsVersion "33.0.1"  
+
     namespace = "com.example.news_app"
     compileSdk = flutter.compileSdkVersion
     ndkVersion = flutter.ndkVersion
